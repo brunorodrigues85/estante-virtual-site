@@ -15,7 +15,7 @@
 <header class="topo"><div class="conteudo"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#F7F1E3"/><path fill="#2F4A3A" d="M29.5 43h7.5a1 1 0 0 1 1 1v28h-9.5V44a1 1 0 0 1 1-1z"/><path fill="#7A2E3A" d="M39 36h6a1 1 0 0 1 1 1v35h-8V37a1 1 0 0 1 1-1z"/><path fill="#C9A227" d="M48 46h7a1 1 0 0 1 1 1v25h-9V47a1 1 0 0 1 1-1z"/><path fill="#2F4A3A" d="M58 39h5.5a1 1 0 0 1 1 1v32H57V40a1 1 0 0 1 1-1z"/><path fill="#8B5E3C" d="M66.5 72h6L80 48.8 74.3 47z"/><rect fill="#8B5E3C" x="23.5" y="72" width="61" height="6" rx="1.5"/></svg><a href="./">Estante Virtual</a></div></header>
 <main class="conteudo">
   <h1>Política de privacidade</h1>
-  <p class="subtitulo">Estante Virtual · última atualização: 22 de outubro de 2026</p>
+  <p class="subtitulo">Estante Virtual · última atualização: 22 de outubro de 2026 (inclusão da BrasilAPI)</p>
 
   <p>O Estante Virtual é um app Android pessoal de controle de leitura, desenvolvido por Bruno de Paula Rodrigues para uso próprio. Esta página explica, de forma direta, o que acontece com os dados usados pelo app.</p>
 
@@ -43,7 +43,12 @@
   </div>
 
   <h2>3. Busca de livros na internet</h2>
-  <p>Quando você busca um livro ou escaneia um código de barras, o app envia <strong>apenas o termo pesquisado ou o ISBN</strong> para a <a href="https://developers.google.com/books">Google Books API</a> e, como reserva, para a <a href="https://openlibrary.org/">Open Library</a>, para obter título, autores, capa e outros dados do livro. Nenhum outro dado do app é enviado nessas buscas. Esses serviços seguem as políticas de privacidade próprias do Google e do Internet Archive.</p>
+  <p>Quando você busca um livro ou escaneia um código de barras, o app envia <strong>apenas o termo pesquisado ou o ISBN</strong> a serviços públicos de catálogo, para obter título, autores, capa e outros dados do livro:</p>
+  <ul class="lista">
+    <li><span><strong>Busca por ISBN</strong> (código de barras ou ISBN digitado): primeiro a <a href="https://brasilapi.com.br/">BrasilAPI</a>, que consulta bases como a CBL (Câmara Brasileira do Livro), Mercado Editorial, Open Library e Google Books; se faltarem dados, também a <a href="https://developers.google.com/books">Google Books API</a> e a <a href="https://openlibrary.org/">Open Library</a>.</span></li>
+    <li><span><strong>Busca por título ou autor</strong>: Google Books API e Open Library.</span></li>
+  </ul>
+  <p>Nenhum outro dado do app é enviado nessas buscas. Esses serviços seguem as políticas de privacidade próprias da BrasilAPI, do Google e do Internet Archive.</p>
 
   <h2>4. Backup opcional no Google Drive</h2>
   <p>O backup é <strong>opcional</strong> e só funciona se você conectar a sua conta Google em Mais › Ajustes › Backup. Nesse caso:</p>
